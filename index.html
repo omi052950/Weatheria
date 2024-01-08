@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatheria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="page1">
+            <div class="nav">
+                <div class="left-nav">
+                    <div class="img-div-left-nav">
+                        <img src="Logo.png" alt="">
+                    </div>
+                    <div class="logo-name-left-nav">
+                        <h5>Whetheria</h5>
+                    </div>
+                </div>
+                <div class="mid-nav">
+                    <a href="#">Today</a>
+                    <a href="#">Radar</a>
+                    <a href="#">News</a>
+                    <a href="#">Air Quality</a>
+                </div>
+                <div class="right-nav">
+                    <button type="button">LogIn</button>
+                    <button type="button">SignUp</button>
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+            <div class="page1-content">
+                <div class="page1-content-left-div">
+                    <div class="container">
+                        <div class="search-box">
+                            <i class='bx bxs-map'></i>
+                            <input class="input" type="text" placeholder="Enter your location">
+                            <button class="bx bx-search"></button>
+                        </div>
+
+                        <div class="wheather-box">
+                            <div class="box">
+                                <div class="info-weather">
+                                    <div class="weather">
+                                        <img src="cloud.png">
+                                        <p class="temprature">16<span>°C</span></p>
+                                        <p class="description">Broken Clouds</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="error">
+                            <img src="404.png" alt="">
+                        </div>
+
+                        <div class="weather-details">
+                            <div class="humidity">
+                                <i class='bx bx-water' ></i>
+                                <div class="text">
+                                    <div class="info-humidity">
+                                        <span>0%</span>
+                                    </div>
+                                    <p>Humidity</p>
+                                </div>
+                            </div>
+
+                            <div class="wind">
+                                <i class='bx bx-wind' ></i>
+                                <div class="text">
+                                    <div class="info-wind">
+                                        <span>0Km/hr</span>
+                                    </div>
+                                    <p>Wind Speed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page1-content-right-div">
+                    <h1>Weatheria</h1>
+                    <h5>Here you go, Search your locality</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maiores, iusto quod amet esse quo
+                        ea numquam facere non alias, exercitationem fugiat voluptates dolorem, necessitatibus, ex,
+                        deserunt alias sequi consequuntur corrupti quod quisquam repudiandae delectus tenetur quia
+                        sapiente esse!</p>
+
+                    <button type="button">Explore Now !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

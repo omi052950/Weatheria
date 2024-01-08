@@ -1,0 +1,750 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu";
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Wrapper div */
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/* Page 1 styling */
+
+.page1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* page1 > navbar styling */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    /* background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(100px);
+    border-bottom: 2px solid rgba(255, 255, 255, .1); */
+}
+
+.left-nav {
+    width: 20%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+.img-div-left-nav img {
+    width: 6vw;
+}
+
+.img-div-left-nav img:hover {
+    cursor: pointer;
+}
+
+.logo-name-left-nav h5 {
+    font-size: 1.3vw;
+    font-weight: 500;
+    color: #fff;
+}
+
+.logo-name-left-nav h5:hover {
+    cursor: pointer;
+}
+
+.mid-nav {
+    width: 60%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mid-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.mid-nav a:hover {
+    color: #dadada;
+    border-bottom: 2px solid #dadada;
+}
+
+.right-nav {
+    width: 20%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+}
+
+.right-nav button {
+    padding: .7vw 1.5vw;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.right-nav button:hover {
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.right-nav i {
+    display: none;
+}
+
+
+/* Page1 > content styling */
+
+
+.page1-content {
+    width: 90%;
+    height: calc(100% - 100px);
+    margin: 3vw auto;
+    /* background-color: aqua; */
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .1);
+
+}
+
+/* Page1 > left content styling */
+
+.page1-content-left-div {
+    width: 50%;
+    height: 100%;
+    /* background-color: aqua; */
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* left content > main container styling */
+
+.container {
+    position: relative;
+    height: 95%;
+    width: 70%;
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    /* backdrop-filter: blur(30px); */
+    border-radius: 10px;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    height: 12%;
+    /* background: slateblue; */
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 3px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2vw;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0 3vw;
+}
+
+.search-box input::placeholder {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.search-box button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 3vw;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    color: #fff;
+    padding: 0 1vw;
+    margin: 0 1vw;
+    cursor: pointer;
+}
+
+.search-box i {
+    position: absolute;
+    left: 10px;
+    font-size: 1.5vw;
+}
+
+.weather-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2vw;
+}
+
+.weather img {
+    width: 60%;
+}
+
+.weather .temprature {
+    position: relative;
+    font-size: 4vw;
+    color: white;
+    font-weight: 500;
+    margin: 1vw;
+}
+
+.weather .description {
+    color: #fff;
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.weather-details {
+    display: flex;
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+    margin: 2vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+    color: #fff;
+    padding: 1vw;
+}
+
+.weather-details .humidity p,
+.weather-details .wind p {
+    font-size: 1vw;
+    font-weight: 400;
+    position: relative;
+}
+
+.weather-details .humidity span,
+.weather-details .wind span {
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.humidity,
+.wind {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.humidity i,
+.wind i {
+    font-size: 3vw;
+    padding: 0 .5vw;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error img {
+    display: none;
+    width: 100%;
+}
+
+/* Page1 > right content styling */
+
+.page1-content-right-div {
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.page1-content-right-div h1 {
+    font-size: 5vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 6vw;
+}
+
+.page1-content-right-div h5 {
+    font-size: 1vw;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 5px;
+    line-height: 1.3vw;
+    margin-bottom: 1vw;
+}
+
+.page1-content-right-div p {
+    font-size: 1vw;
+    color: #dadada;
+    width: 90%;
+    text-align: left;
+}
+
+.page1-content-right-div button {
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    font-size: 1vw;
+    color: white;
+    padding: .8vw 2vw;
+    margin: 2vw 0vw;
+    border-radius: 5px;
+}
+
+.page1-content-right-div button:hover {
+    background: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for 1px - 375px */
+
+@media (min-width: 1px) and (max-width: 375px) {
+    .nav {
+        height: 70px;
+        width: 100%;
+        border: none;
+    }
+
+    .left-nav {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .logo-name-left-nav h5 {
+        font-size: 4vw;
+
+    }
+
+    .img-div-left-nav img {
+        width: 17vw;
+    }
+
+    .mid-nav {
+        display: none;
+    }
+
+    .right-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        width: 50%;
+        /* background-color: aquamarine; */
+    }
+
+    .right-nav button {
+        display: none;
+    }
+
+    .right-nav i {
+        display: inline-block;
+        font-size: 5vw;
+    }
+
+    .page1-content {
+        flex-direction: column-reverse;
+        padding: 2vh;
+    }
+
+    .page1-content-right-div {
+        width: 100%;
+        height: 30%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page1-content-right-div h1 {
+        font-size: 11vw;
+        margin: 2vh 0;
+    }
+
+    .page1-content-right-div h5 {
+        font-size: 1.2vh;
+        width: 60%;
+        line-height: 1.8vh;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .page1-content-right-div p {
+        width: 80%;
+        font-size: 1vh;
+        font-weight: 100;
+        text-align: justify;
+    }
+
+    .page1-content-right-div button {
+        font-size: 1.2vh;
+        font-weight: 200;
+        padding: .8vh 2vh;
+    }
+
+    .page1-content-left-div {
+        width: 100%;
+        height: 60%;
+    }
+
+    .container {
+        width: 85%;
+        height: 80%;
+    }
+
+    .search-box input {
+        font-size: 1.8vh;
+        padding: 0 5.5vh;
+    }
+
+    .search-box button {
+        font-size: 2vh;
+        padding: 0 4vh;
+    }
+
+    .search-box i {
+        font-size: 2vh;
+        left: 2.5vh;
+    }
+
+    .weather img {
+        width: 80%;
+    }
+
+    .weather .temprature {
+        font-size: 7vw;
+    }
+
+    .humidity i,
+    .wind i {
+        font-size: 6vw;
+        padding: 0 2vw;
+    }
+
+    .weather-details .humidity p,
+    .weather-details .wind p {
+        font-size: 3vw;
+    }
+
+    .weather-details .humidity span,
+    .weather-details .wind span {
+        font-size: 3vw;
+    }
+
+    .wind,
+    .humidity {
+        justify-content: center;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
+
+/* Media Queries 375px - 768px */
+
+@media (min-width: 376px) and (max-width: 767px) {
+    .nav {
+        height: 100px;
+        width: 100%;
+        border: none;
+    }
+
+    .left-nav {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .logo-name-left-nav h5 {
+        font-size: 4vw;
+
+    }
+
+    .img-div-left-nav img {
+        width: 17vw;
+    }
+
+    .mid-nav {
+        display: none;
+    }
+
+    .right-nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        width: 50%;
+        /* background-color: aquamarine; */
+    }
+
+    .right-nav button {
+        display: none;
+    }
+
+    .right-nav i {
+        display: inline-block;
+        font-size: 5vw;
+    }
+
+    .page1-content {
+        flex-direction: column-reverse;
+        padding: 2vh;
+    }
+
+    .page1-content-right-div {
+        width: 100%;
+        height: 30%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page1-content-right-div h1 {
+        font-size: 11vw;
+        margin: 2vh 0;
+    }
+
+    .page1-content-right-div h5 {
+        font-size: 1.2vh;
+        width: 60%;
+        line-height: 1.8vh;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .page1-content-right-div p {
+        width: 80%;
+        font-size: 1vh;
+        font-weight: 100;
+        text-align: justify;
+    }
+
+    .page1-content-right-div button {
+        font-size: 1.2vh;
+        font-weight: 200;
+        padding: .8vh 2vh;
+    }
+
+    .page1-content-left-div {
+        width: 100%;
+        height: 60%;
+    }
+
+    .container {
+        width: 85%;
+        height: 100%;
+    }
+
+    .search-box input {
+        font-size: 1.8vh;
+        padding: 0 5.5vh;
+    }
+
+    .search-box button {
+        font-size: 2vh;
+        padding: 0 4vh;
+    }
+
+    .search-box i {
+        font-size: 2vh;
+        left: 2.5vh;
+    }
+
+    .weather img {
+        width: 60%;
+    }
+
+    .weather .temprature {
+        font-size: 6vw;
+    }
+
+    .humidity i,
+    .wind i {
+        font-size: 5vw;
+        padding: 0 2vw;
+    }
+
+    .weather-details .humidity p,
+    .weather-details .wind p {
+        font-size: 2.5vw;
+    }
+
+    .weather-details .humidity span,
+    .weather-details .wind span {
+        font-size: 2.5vw;
+    }
+
+    .wind,
+    .humidity {
+        justify-content: center;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        flex-wrap: wrap;
+        bottom: 10px;
+    }
+
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
+
+/* Media Queries for 768px - 1024px */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nav {
+        height: 100px;
+        width: 100%;
+        border: none;
+    }
+
+    .left-nav {
+        width: 30%;
+        height: 100%;
+    }
+
+    .img-div-left-nav img {
+        width: 12vw;
+    }
+
+    .logo-name-left-nav h5 {
+        font-size: 2vw;
+    }
+
+    .mid-nav {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mid-nav a {
+        margin: 0 auto;
+        font-size: 2vw;
+    }
+
+    .right-nav {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right-nav button {
+        font-size: 1.5vw;
+        margin: 0 1vw;
+    }
+
+    .container {
+        height: 60%;
+    }
+
+    .weather-details {
+        flex-direction: column;
+    }
+}
